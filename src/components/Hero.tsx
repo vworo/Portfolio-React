@@ -8,6 +8,7 @@ export default function Hero() {
       gap={4}
       alignItems="center"
       justifyContent={"center"}
+      textAlign="center"
       minHeight="calc(100vh - var(--navbar-height))"
     >
       <Typography variant="h2">
