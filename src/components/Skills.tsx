@@ -10,12 +10,14 @@ const skills = [
   "MUI",
   "Node.js",
   "MongoDB",
+  "GitHub",
+  "Figma",
 ];
 
 export default function Skills() {
   return (
     <Stack
-      spacing={2}
+      spacing={4}
       alignItems="center"
       justifyContent="center"
       minHeight="100vh"
@@ -23,7 +25,7 @@ export default function Skills() {
     >
       <Typography variant="h4">Skills</Typography>
 
-      <Stack direction="row" flexWrap="wrap" gap={1} justifyContent="center">
+      <Stack direction="row" flexWrap="wrap" gap={2} justifyContent="center">
         {skills.map((skill) => (
           <Chip
             key={skill}
