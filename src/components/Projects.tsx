@@ -50,7 +50,7 @@ export default function Projects() {
       minHeight={"100vh"}
     >
       <Typography variant="h4">Projects</Typography>
-      <Stack direction={"row"} gap={2}>
+      <Stack direction={{ xs: "column", md: "row" }} gap={4}>
         {projects.map((project) => {
           return (
             <Card key={project.name} sx={{ maxWidth: 345 }}>
