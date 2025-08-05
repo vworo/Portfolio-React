@@ -50,10 +50,15 @@ export default function Projects() {
       minHeight={"100vh"}
     >
       <Typography variant="h4">Projects</Typography>
-      <Stack direction={{ xs: "column", md: "row" }} gap={4}>
+      <Stack
+        direction={{ xs: "column", md: "row" }}
+        gap={4}
+        width={{ xs: "90%", md: "100%" }}
+        justifyContent={"center"}
+      >
         {projects.map((project) => {
           return (
-            <Card key={project.name} sx={{ maxWidth: 345 }}>
+            <Card key={project.name}>
               <CardMedia
                 component="img"
                 image={project.imgURL}
