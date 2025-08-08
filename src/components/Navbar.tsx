@@ -14,11 +14,13 @@ import {
 } from "@mui/material";
 import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useTheme } from "next-themes";
 
 const pages = ["About", "Projects", "Contact"];
 
 export default function Navbar() {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
+  const { setTheme } = useTheme();
 
   const handleOpenNavMenu = (event: MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -87,6 +89,21 @@ export default function Navbar() {
                 {page}
               </Button>
             ))}
+          </Box>
+
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+            <Button
+              onClick={() => setTheme("light")}
+              sx={{ my: 2, color: "white" }}
+            >
+              Light
+            </Button>
+            <Button
+              onClick={() => setTheme("dark")}
+              sx={{ my: 2, color: "white" }}
+            >
+              Dark
+            </Button>
           </Box>
         </Toolbar>
       </Container>
