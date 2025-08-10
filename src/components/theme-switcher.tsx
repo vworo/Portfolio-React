@@ -21,11 +21,11 @@ export default function ThemeSwitcher() {
   const isDarkMode = theme === "dark";
 
   return isDarkMode ? (
-    <IconButton onClick={() => setTheme("light")}>
+    <IconButton color="inherit" onClick={() => setTheme("light")}>
       <LightModeIcon />
     </IconButton>
   ) : (
-    <IconButton onClick={() => setTheme("dark")}>
+    <IconButton color="inherit" onClick={() => setTheme("dark")}>
       <DarkModeIcon />
     </IconButton>
   );
