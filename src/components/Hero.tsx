@@ -22,12 +22,17 @@ export default function Hero() {
         <Button variant="contained" href="/resume.pdf" target="_blank">
           Resume
         </Button>
-        <IconButton href="https://github.com/vworo" target="_blank">
+        <IconButton
+          href="https://github.com/vworo"
+          target="_blank"
+          color="inherit"
+        >
           <GitHubIcon />
         </IconButton>
         <IconButton
           href="https://www.linkedin.com/in/victor-worobec/"
           target="_blank"
+          color="inherit"
         >
           <LinkedInIcon />
         </IconButton>
