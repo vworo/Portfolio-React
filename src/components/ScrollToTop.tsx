@@ -1,29 +1,20 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { Fab, Zoom } from "@mui/material";
+import { Fab, Zoom, useScrollTrigger } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 export default function ScrollToTop() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setVisible(window.scrollY > 300);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Cleanup when component unmounts - prevent memory leak and duplicate event listener
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const trigger = useScrollTrigger({
+    threshold: 300,
+    disableHysteresis: true,
+  });
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <Zoom in={visible}>
+    <Zoom in={trigger}>
       <Fab
         color="primary"
         size="small"
