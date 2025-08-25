@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
+import ThemeSwitcher from "@/components/theme-switcher";
 
 const pages = ["About", "Projects", "Contact"];
 
@@ -87,6 +88,7 @@ export default function Navbar() {
                 {page}
               </Button>
             ))}
+            <ThemeSwitcher />
           </Box>
         </Toolbar>
       </Container>
