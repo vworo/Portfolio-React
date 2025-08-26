@@ -63,7 +63,6 @@ export default function Projects() {
                 component="img"
                 image={project.imgURL}
                 alt={project.imgAlt}
-                height="140"
               />
               <CardContent>
                 <Typography gutterBottom variant="h6" component="div">
