@@ -15,16 +15,16 @@ const projects = [
     name: "Beat Box",
     desc: "An app that plays music through Spotify API. Requires a Spotify premium account.",
     skills: "Javascript, React",
-    imgURL: "https://placehold.co/600x400",
+    imgURL: "/beatbox.png",
     imgAlt: "Beat Box",
     github: "https://github.com/vworo/Beat-Box",
     live: "https://boxbeats.netlify.app/",
   },
   {
     name: "Armory",
-    desc: "An app designed for police and military inventory management",
+    desc: "CRUD system designed for police and military inventory management",
     skills: "Ruby, Rails",
-    imgURL: "https://placehold.co/600x400",
+    imgURL: "/armory.png",
     imgAlt: "Armory",
     github: "https://github.com/vworo/Armory",
     live: "https://armory.fly.dev/",
@@ -33,7 +33,7 @@ const projects = [
     name: "Tic Tac Toe",
     desc: "My first HTML, CSS, and JS project.",
     skills: "HTML, CSS, JS",
-    imgURL: "https://placehold.co/600x400",
+    imgURL: "/tictactoe.png",
     imgAlt: "Tic Tac Toe",
     github: "https://github.com/vworo/Tic-Tac-Toe",
     live: "https://vworo.github.io/Tic-Tac-Toe/",
@@ -63,7 +63,6 @@ export default function Projects() {
                 component="img"
                 image={project.imgURL}
                 alt={project.imgAlt}
-                height="140"
               />
               <CardContent>
                 <Typography gutterBottom variant="h6" component="div">
