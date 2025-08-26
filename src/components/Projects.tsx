@@ -22,7 +22,7 @@ const projects = [
   },
   {
     name: "Armory",
-    desc: "An app designed for police and military inventory management",
+    desc: "CRUD system designed for police and military inventory management",
     skills: "Ruby, Rails",
     imgURL: "https://placehold.co/600x400",
     imgAlt: "Armory",
